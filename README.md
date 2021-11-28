@@ -1,4 +1,4 @@
-
+## Chapter 1
 #### Plus Four confidence interval
 
 is a method for computing confidence intervals for a process from a sample proportion. We add 4 more observation to the total number of observation among which 2 are successes and 2 are failures. The plus four method has a high coverage-rate compared to other methods.
@@ -45,3 +45,4 @@ Are random variable used when:
     
 An hypergeometric random variable is similar to a binomial rand var in that both variables require that there are 2 types of distinct object in the population. An hypergeometric var is used when the population is finite and trials are no longer considered independent of each other.
 
+## Chapter 2:
