@@ -94,3 +94,43 @@ It also allows us to find the hypothetical p-value for a given mean value.
 #### One sample t-interval
 
 When he sample size is large enough a confidence interval for $\mu$ is given by $\bar{x}\pm t_{n-1}(s/\sqrt{n})$ where $t_{n-1}$ is the t-value for the t-distribution of degree n-1.
+
+## Chapter 3-4 
+#### Binary variable
+
+ The simplest statistic for comparing a binary variable between two groups is the difference in the proportion of “successes” for each group.
+To compare the two groups we also need a conditional proportions.
+A conditional proportion is when you calculat separately proportions for each group rather than computing the overall proportion.
+
+eg:
+  Comparing success rate on penalties for soccer player to determine most likely to score in a competition.
+  
+#### Two sample z-test
+
+is used to compare the means of two samples to see if it is feasible that they come from the same population. This test requires that we both population have normal distribution and that the variance be known for both population. It is preferred to the t-test when the variance is known. In R  we use iscamtwopropztest which takes the following inputs: 
+
+  observed1 (either the number of successes or sample proportion for first group), n1 (sample size for first group, observed2 (count or proportion), and n2
+
+  Optional: hypothesized difference and alternative (“less”, “greater”, or “two.sided”) Optional: confidence level
+  
+  example:
+  Given 2 samples of shot scored on free kicks. We can use this test to determine if both samples come from the same player. 
+  
+#### types of study
+##### observational study
+Observational study is one in which the researchers passively observe and record information about the observational units.
+eg:
+What side of the bed do partners usually like when sleeping?
+This involve observing and recording which side does each partner in a couple likes to sleep on.
+##### experimental study
+In an experimental study, the researchers actively impose the explanatory variable on the observational units.
+eg:
+How does different caffeine levels affects focus level in students?
+This involves giving the students various level of caffeine and assess their level of focus as a result of ingesting the caffeine.
+
+#### Two population means
+How do you compare two population means?
+As with comparing two population proportions, when we compare two population means from independent populations, the interest is in the difference of the two means. In other words, if is the population mean from population 1 and is the population mean from population 2, then the difference is μ 1 − μ 2. We usually hypothised on that value is the difference is 0 then there is no difference else there is a difference between the two means.
+
+eg: We would use this procedure to compare the means of two group as a result of altering a parameter for the group.
+
