@@ -134,3 +134,41 @@ As with comparing two population proportions, when we compare two population mea
 
 eg: We would use this procedure to compare the means of two group as a result of altering a parameter for the group.
 
+## Chapter 5
+
+#### Chi-square statistic
+
+Chi-square statistic is used to compare the observed and expected counts, allowing for more than two categories for the response variable. A Chi Square distribution is skewed to the right and provides a reasonables model for large sample sizes.
+
+When comparing several population proportions, the chi-square degrees of freedom are equal to the number of explanatory variable categories minus 1 , c-1.
+
+In R: The iscamchisqprob function takes the following inputs 
+• xval = the observed value of the test statistic 
+• df = degrees of freedom for the chi-square distribution
+
+#### Scatter plot
+
+A scatter plot shows the direction of a relationship between the variables. A clear direction happens when there is either: High values of one variable occurring with high values of the other variable or low values of one variable occurring with low values of the other variable.
+
+![Scatter plot example](https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/data-analysis-in-tableau-desktop/compare-measures-using-a-scatter-plot/images/15f83f48a4bd1701727b368bce219fca_1-eaa-6-efe-e-360-4554-957-d-d-76-c-227-a-111-f.png)
+
+#### Correlation
+
+Correlation is a statistical measure that expresses the extent to which two variables are linearly related (meaning they change together at a constant rate). It's a common tool for describing simple relationships without making a statement about cause and effect.
+You find The correlation by:
+Finding the mean of all the x-values
+then finding the standard deviation of all the x-values(sx) and the standard deviation of all the y-values(sy)
+
+![Types of correlation](https://sphweb.bumc.bu.edu/otlt/MPH-Modules/PH717-QuantCore/PH717-Module9-Correlation-Regression/Correlation%20Coefficient%20examples.png)
+
+#### Best fit line
+
+Line of best fit refers to a line through a scatter plot of data points that best expresses the relationship between those points.
+The line of best fit is described by the equation ŷ = bX + a, where b is the slope of the line and a is the intercept (i.e., the value of Y when X = 0). This calculator will determine the values of b and a for a set of data comprising two variables, and estimate the value of Y for any specified value of X.
+Divide the sum by sx*sy
+
+#### Residual
+
+A residual is a measure of how well a line fits an individual data point. This vertical distance is known as a residual.
+
+The residual for each observation is the difference between predicted values of y (dependent variable) and observed values of y . Residual=actual y value−predicted y value,ri=yi−^yi.
