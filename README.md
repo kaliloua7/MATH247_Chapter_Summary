@@ -1,3 +1,5 @@
+# Chapter Summaries
+
 ## Chapter 1
 #### Plus Four confidence interval
 
